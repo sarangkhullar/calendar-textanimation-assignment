@@ -1,0 +1,41 @@
+.heading{
+    text-align: center;
+}
+
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .day-header {
+    background-color: lightblue;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  .weekend-header {
+    background-color: lightcoral;
+  }
+  .date {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .weekend-date {
+    background-color: rgba(240, 128, 128, 0.411);
+  }
+
+  .changing-word {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  @keyframes example {
+    from {content: "hello"}
+    to {content: "bye"}
+  }
